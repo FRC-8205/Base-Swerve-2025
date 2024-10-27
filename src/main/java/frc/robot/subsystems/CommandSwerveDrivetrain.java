@@ -64,6 +64,7 @@ public class CommandSwerveDrivetrain extends SwerveDrivetrain implements Subsyst
         m_simNotifier.startPeriodic(kSimLoopPeriod);
     }
 
+
     @Override
     public void periodic() {
         /* Periodically try to apply the operator perspective */
