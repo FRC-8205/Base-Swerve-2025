@@ -152,14 +152,14 @@ public class TunerConstants {
     private static final double kBackRightYPosInches = -12.5;
 
     //Swerve Drive Kinematics
-    public SwerveDriveKinematics SwerveDriveKinematics = new SwerveDriveKinematics(
+    public SwerveDriveKinematics swerveDriveKinematics = new SwerveDriveKinematics(
         new Translation2d(kFrontLeftXPosInches, kFrontLeftYPosInches),
         new Translation2d(kFrontRightXPosInches, kFrontRightYPosInches),
         new Translation2d(kBackLeftXPosInches, kBackLeftYPosInches),
         new Translation2d(kBackRightXPosInches, kBackRightYPosInches)
         );
 
-
+        
     private static final SwerveModuleConstants FrontLeft = ConstantCreator.createModuleConstants(
             kFrontLeftSteerMotorId, kFrontLeftDriveMotorId, kFrontLeftEncoderId, kFrontLeftEncoderOffset, Units.inchesToMeters(kFrontLeftXPosInches), Units.inchesToMeters(kFrontLeftYPosInches), kInvertLeftSide)
             .withSteerMotorInverted(kFrontLeftSteerInvert);
